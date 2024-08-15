@@ -1,7 +1,11 @@
+using BarcodeGenerator.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddPersistenceServices(builder.Configuration.GetConnectionString("BarcodeGenerator"));
 
 var app = builder.Build();
 
