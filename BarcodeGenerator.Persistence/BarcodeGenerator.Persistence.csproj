@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BarcodeGenerator.Application\BarcodeGenerator.Application.csproj" />
     <ProjectReference Include="..\BarcodeGenerator.Domain\BarcodeGenerator.Domain.csproj" />
   </ItemGroup>
 

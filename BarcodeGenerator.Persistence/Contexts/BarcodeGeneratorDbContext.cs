@@ -5,7 +5,7 @@ namespace BarcodeGenerator.Persistence.Contexts;
 
 public class BarcodeGeneratorDbContext : DbContext
 {
-	public BarcodeGeneratorDbContext(DbContextOptions options) : base(options) { }
+    public BarcodeGeneratorDbContext(DbContextOptions options) : base(options) { }
 
 	public DbSet<InventoryVoucher> InventoryVouchers { get; set; }
 	public DbSet<InventoryVoucherSerialNumber> SerialNumbers { get; set; }

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BarcodeGenerator.Domain.Entities.InventoryVoucher>
+
+@{
+    ViewData["Title"] = "Inventory Voucher";
+}
+
+<div class="alert alert-dark" role="alert">
+    Inventory Voucher List
+</div>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Part Name</th>
+            <th>Voucher Number</th>
+            <th>Quantity</th>
+            <th>Manufacturer</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int rowNumber = 1;
+
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@rowNumber</td>
+                    <td>@item.PartName</td>
+                    <td>@item.VoucherNumber</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.CounterpartDLCode</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-info">
+                            Barcode
+                        </button>
+                    </td>
+                </tr>
+
+                rowNumber++;
+            }
+        }
+   </tbody>
+</table>
