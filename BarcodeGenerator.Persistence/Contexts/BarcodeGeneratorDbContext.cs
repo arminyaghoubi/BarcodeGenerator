@@ -9,8 +9,9 @@ public class BarcodeGeneratorDbContext : DbContext
 
 	public DbSet<InventoryVoucher> InventoryVouchers { get; set; }
 	public DbSet<InventoryVoucherSerialNumber> SerialNumbers { get; set; }
+    public DbSet<ViewInventoryVoucher> ViewInventoryVouchers { get; set; }
 
-	protected override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
 		modelBuilder.ApplyConfigurationsFromAssembly(typeof(BarcodeGeneratorDbContext).Assembly);
 
