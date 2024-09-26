@@ -1,8 +1,7 @@
 ﻿namespace BarcodeGenerator.Domain.Entities;
 
-public class InventoryVoucherSerialNumber
+public class InventoryVoucherSerialNumber: EntityBase
 {
-    public int Id { get; set; }
     public string SerialNumber { get; set; }
     public int PrintCounter { get; set; }
 

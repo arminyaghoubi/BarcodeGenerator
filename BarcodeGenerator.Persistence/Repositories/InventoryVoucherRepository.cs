@@ -31,7 +31,8 @@ public class InventoryVoucherRepository : IInventoryVoucherRepository
     public IEnumerable<InventoryVoucher> SearchInventoryVouchers(string voucherNumber)
     {
         return _context.InventoryVouchers
-            .FromSqlRaw("EXECUTE dbo.SearchInventoryVoucher @p0", voucherNumber)
+            .FromSqlRaw("SearchInventoryVoucher @p0", voucherNumber)
+            .AsNoTracking()
             .ToList();
     }
 }
