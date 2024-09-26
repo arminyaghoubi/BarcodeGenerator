@@ -19,4 +19,20 @@ public class InventoryVoucherController : Controller
 
         return View(inventoryVouchers);
     }
+
+    public IActionResult GetInventoryVoucherFromView()
+    {
+        var viewInventoryVouchers = _inventoryVoucherService.GetViewInventoryVouchers();
+
+        return View(viewInventoryVouchers);
+    }
+
+    public IActionResult SearchInventoryVouchers(string voucherNumber = null)
+    {
+        ViewData["SearchVoucherNumber"] = voucherNumber;
+
+        var inventoryVouchers = _inventoryVoucherService.SearchInventoryVouchers(voucherNumber);
+
+        return View("Index", inventoryVouchers);
+    }
 }

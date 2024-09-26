@@ -8,6 +8,16 @@
     Inventory Voucher List
 </div>
 
+<form class="row g-3" method="get" asp-controller="InventoryVoucher" asp-action="SearchInventoryVouchers">
+    <div class="col-auto">
+        <label for="inputVoucherNumber" class="visually-hidden">Voucher Number</label>
+        <input name="voucherNumber" type="text" class="form-control" id="inputVoucherNumber" placeholder="Voucher Number" value="@ViewData["SearchVoucherNumber"]">
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Search</button>
+    </div>
+</form>
+
 <table class="table table-hover">
     <thead>
         <tr>

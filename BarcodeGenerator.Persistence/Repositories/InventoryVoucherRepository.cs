@@ -20,4 +20,18 @@ public class InventoryVoucherRepository : IInventoryVoucherRepository
             .AsNoTracking()
             .ToList();
     }
+
+    public IEnumerable<ViewInventoryVoucher> GetViewInventoryVouchers()
+    {
+        return _context.ViewInventoryVouchers
+            .AsNoTracking()
+            .ToList();
+    }
+
+    public IEnumerable<InventoryVoucher> SearchInventoryVouchers(string voucherNumber)
+    {
+        return _context.InventoryVouchers
+            .FromSqlRaw("EXECUTE dbo.SearchInventoryVoucher @p0", voucherNumber)
+            .ToList();
+    }
 }
