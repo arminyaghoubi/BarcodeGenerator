@@ -18,4 +18,10 @@ public class InventoryVoucherService : IInventoryVoucherService
         var inventoryVouchers = _inventoryVoucherRepository.GetInventoryVouchers();
         return inventoryVouchers;
     }
+
+    public IEnumerable<ViewInventoryVoucher> GetViewInventoryVouchers()
+    {
+        var viewInventoryVouchers = _inventoryVoucherRepository.GetViewInventoryVouchers();
+        return viewInventoryVouchers;
+    }
 }

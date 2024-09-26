@@ -20,4 +20,11 @@ public class InventoryVoucherRepository : IInventoryVoucherRepository
             .AsNoTracking()
             .ToList();
     }
+
+    public IEnumerable<ViewInventoryVoucher> GetViewInventoryVouchers()
+    {
+        return _context.ViewInventoryVouchers
+            .AsNoTracking()
+            .ToList();
+    }
 }

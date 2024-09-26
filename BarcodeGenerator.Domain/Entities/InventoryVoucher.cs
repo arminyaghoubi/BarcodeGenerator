@@ -1,8 +1,7 @@
 ﻿namespace BarcodeGenerator.Domain.Entities;
 
-public class InventoryVoucher
+public class InventoryVoucher: EntityBase
 {
-	public int Id { get; set; }
 	public string PartName { get; set; }
 	public string VoucherNumber { get; set; }
 	public int Quantity { get; set; }
