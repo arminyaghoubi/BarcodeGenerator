@@ -19,4 +19,11 @@ public class InventoryVoucherController : Controller
 
         return View(inventoryVouchers);
     }
+
+    public IActionResult GetInventoryVoucherFromView()
+    {
+        var viewInventoryVouchers = _inventoryVoucherService.GetViewInventoryVouchers();
+
+        return View(viewInventoryVouchers);
+    }
 }
