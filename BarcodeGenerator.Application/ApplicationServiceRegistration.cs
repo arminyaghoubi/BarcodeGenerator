@@ -9,6 +9,7 @@ public static class ApplicationServiceRegistration
     public static IServiceCollection AddApplicationServices(this IServiceCollection services)
     {
         services.AddScoped<IInventoryVoucherService, InventoryVoucherService>();
+        services.AddScoped<ISerialNumberService, SerialNumberService>();
 
         return services;
     }

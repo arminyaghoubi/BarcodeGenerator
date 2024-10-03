@@ -13,6 +13,9 @@ public static class PersistenceServiceRegistration
         services.AddDbContext<BarcodeGeneratorDbContext>(options => options.UseSqlServer(connectionString));
 
         services.AddScoped<IInventoryVoucherRepository, InventoryVoucherRepository>();
+        //services.AddScoped<IInventoryVoucherRepository, InventoryVoucherRepositoryMongoDB>();
+
+        services.AddScoped<IInventoryVoucherSerialNumberRepository, InventoryVoucherSerialNumberRepository>();
 
         return services;
     }

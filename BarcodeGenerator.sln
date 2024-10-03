@@ -5,17 +5,19 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CD934F86-AA12-492D-8505-53ECBC389941}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeGenerator.Domain", "BarcodeGenerator.Domain\BarcodeGenerator.Domain.csproj", "{58A71846-2A7A-45D4-8B36-6ED7E07EF17A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarcodeGenerator.Domain", "BarcodeGenerator.Domain\BarcodeGenerator.Domain.csproj", "{58A71846-2A7A-45D4-8B36-6ED7E07EF17A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeGenerator.Application", "BarcodeGenerator.Application\BarcodeGenerator.Application.csproj", "{89077924-9DB7-4BB3-8DE1-28D5EC06D347}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarcodeGenerator.Application", "BarcodeGenerator.Application\BarcodeGenerator.Application.csproj", "{89077924-9DB7-4BB3-8DE1-28D5EC06D347}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0386BC11-ADF7-45E2-BDAE-4176F3694DDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeGenerator.Persistence", "BarcodeGenerator.Persistence\BarcodeGenerator.Persistence.csproj", "{54E4472B-E315-483F-91A0-D56DBDD1C951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarcodeGenerator.Persistence", "BarcodeGenerator.Persistence\BarcodeGenerator.Persistence.csproj", "{54E4472B-E315-483F-91A0-D56DBDD1C951}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{23C4AE41-66A3-46CA-987D-E6795C192862}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeGenerator.MVC", "BarcodeGenerator.MVC\BarcodeGenerator.MVC.csproj", "{7D84873F-4321-46AF-9ED9-5D0098D710F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarcodeGenerator.MVC", "BarcodeGenerator.MVC\BarcodeGenerator.MVC.csproj", "{7D84873F-4321-46AF-9ED9-5D0098D710F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeGenerator.SendSMS", "BarcodeGenerator.SendSMS\BarcodeGenerator.SendSMS.csproj", "{AEDDCC56-F0B3-4A2C-9592-971947381C97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7D84873F-4321-46AF-9ED9-5D0098D710F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D84873F-4321-46AF-9ED9-5D0098D710F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D84873F-4321-46AF-9ED9-5D0098D710F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEDDCC56-F0B3-4A2C-9592-971947381C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDDCC56-F0B3-4A2C-9592-971947381C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDDCC56-F0B3-4A2C-9592-971947381C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDDCC56-F0B3-4A2C-9592-971947381C97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{89077924-9DB7-4BB3-8DE1-28D5EC06D347} = {CD934F86-AA12-492D-8505-53ECBC389941}
 		{54E4472B-E315-483F-91A0-D56DBDD1C951} = {0386BC11-ADF7-45E2-BDAE-4176F3694DDD}
 		{7D84873F-4321-46AF-9ED9-5D0098D710F6} = {23C4AE41-66A3-46CA-987D-E6795C192862}
+		{AEDDCC56-F0B3-4A2C-9592-971947381C97} = {0386BC11-ADF7-45E2-BDAE-4176F3694DDD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5A13FC92-AF1D-4D6B-8483-B10CA10528AC}
