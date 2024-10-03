@@ -42,9 +42,9 @@
                     <td>@item.Quantity</td>
                     <td>@item.CounterpartDLCode</td>
                     <td>
-                        <button type="button" class="btn btn-outline-info">
+                        <a class="btn btn-outline-info" asp-controller="SerialNumber" asp-action="Index" asp-route-id="@item.Id">
                             Barcode
-                        </button>
+                        </a>
                     </td>
                 </tr>
 

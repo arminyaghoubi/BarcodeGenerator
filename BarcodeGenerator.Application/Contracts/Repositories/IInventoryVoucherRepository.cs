@@ -7,4 +7,5 @@ public interface IInventoryVoucherRepository
     IEnumerable<InventoryVoucher> GetInventoryVouchers();
     IEnumerable<ViewInventoryVoucher> GetViewInventoryVouchers();
     IEnumerable<InventoryVoucher> SearchInventoryVouchers(string voucherNumber);
+    InventoryVoucher GetInventoryVoucherById(int inventoryVoucherId);
 }

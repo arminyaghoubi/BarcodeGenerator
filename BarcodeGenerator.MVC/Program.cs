@@ -1,5 +1,6 @@
 using BarcodeGenerator.Persistence;
 using BarcodeGenerator.Application;
+using BarcodeGenerator.SendSMS;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddPersistenceServices(builder.Configuration.GetConnectionString("BarcodeGenerator"))
-    .AddApplicationServices();
+    .AddApplicationServices()
+    .AddSendSmsServices();
 
 var app = builder.Build();
 

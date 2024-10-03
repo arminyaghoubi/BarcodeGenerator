@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BarcodeGenerator.Persistence\BarcodeGenerator.Persistence.csproj" />
+    <ProjectReference Include="..\BarcodeGenerator.SendSMS\BarcodeGenerator.SendSMS.csproj" />
   </ItemGroup>
 
 </Project>
