@@ -14,6 +14,8 @@ namespace BarcodeGenerator.MVC.Controllers
 
         public IActionResult Index(int id)
         {
+            ViewData["Id"] = id;
+
             var serialNumbers = _serialNumberService.GetInventoryVoucherSerialNumbers(id);
 
             return View(serialNumbers);
